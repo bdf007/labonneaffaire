@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class DataService {
   listeArticles = [
     {
+      id: 1,
       titreArticle: "Vélo",
       prixArticle: 80,
       description: "Vélo de course",
@@ -14,6 +15,7 @@ export class DataService {
       dispo: false
     },
     {
+      id: 2,
       titreArticle: "TV",
       prixArticle: 230,
       description: "TV 4K",
@@ -22,6 +24,7 @@ export class DataService {
       dispo: true
     },
     {
+      id: 3,
       titreArticle: "Jouet pour enfant",
       prixArticle: 15,
       description: "Jouet pour enfant",
@@ -31,4 +34,14 @@ export class DataService {
     }
   ]
   constructor() { }
+
+  // get article by id
+  getArticle(id: number) {
+    const article = this.listeArticles.find(
+      (s) => {
+        return s.id === id;
+      }
+    );
+    return article;
+  }
 }

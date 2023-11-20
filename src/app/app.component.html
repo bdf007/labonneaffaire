@@ -20,53 +20,7 @@
   </div>
 </nav>
 
-<!-- contenu -->
-<div class="container">
-  <div id="alertMsg">
-    <p>
-      {{ message }}
-    </p>
-  </div>
-  <div id="home">
-    <app-article
-      *ngFor="let element of liste"
-      [titreArticle]="element.titreArticle"
-      [prixArticle]="element.prixArticle"
-      [description]="element.description"
-      [urlImg]="element.urlImg"
-      [textALtImg]="element.textALtImg"
-      [dispo]="element.dispo"
-      (info)="onAffiche($event)"
-    ></app-article>
-    <!-- <app-article
-      [titreArticle]="'velo'"
-      [prixArticle]="prix1"
-      [description]="'Un super vélo tout terrain'"
-      [urlImg]="'../assets/velo.jpg'"
-      [textALtImg]="'Vélo tout terrain'"
-      [dispo]="false"
-      (info)="onAffiche($event)"
-    ></app-article>
-    <app-article
-      [titreArticle]="'tv'"
-      [prixArticle]="prix2"
-      [description]="'tres bonne resolution'"
-      [urlImg]="'../assets/tv.png'"
-      [textALtImg]="'TV'"
-      [dispo]="true"
-      (info)="onAffiche($event)"
-    ></app-article>
-    <app-article
-      [titreArticle]="'jouet'"
-      [prixArticle]="prix3"
-      [description]="'pour les enfants'"
-      [urlImg]="'../assets/jouet.jpg'"
-      [textALtImg]="'Jouet'"
-      [dispo]="true"
-      (info)="onAffiche($event)"
-    ></app-article> -->
-  </div>
-</div>
+<router-outlet></router-outlet>
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
