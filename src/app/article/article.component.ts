@@ -10,13 +10,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './article.component.css'
 })
 export class ArticleComponent implements OnInit {
- // titreArticle: string = "Titre de l'article";
-  // prixArticle: number = 12;
- // textALtImg: string = "Titre alternatif de l'image";
- // urlImg: string = "https://via.placeholder.com/400x250";
+
   totalNbrLike: number = 0;
   comment: string = "Commentaire de l'article";
-  //dispo: boolean = false;
 
   @Input() titreArticle: string;
   @Input() prixArticle: number;
