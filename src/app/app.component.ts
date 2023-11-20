@@ -16,4 +16,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     console.log('Ici ngOninit');
   }
+  prix1: number = 80;
+  prix2: number = 230;
+  prix3: number = 15;
+  message: string = "";
+
+  onAffiche(arg: string) {
+    return this.message = "Merci d'avoir voté pour " + arg;
+  }
 }

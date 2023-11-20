@@ -13,3 +13,10 @@ footer {
   align-items: center;
   padding: 5%;
 }
+
+#alertMsg {
+  text-align: center;
+  padding-top: 20px;
+  color: green;
+  font-size: 1.2rem;
+}
