@@ -9,6 +9,6 @@ export const routes: Routes = [
     {path:"list", redirectTo:""},
     { path: "detail/:id", component: DetailComponent },
     { path: "ajouter", component: AjouterComponent },
-    {path: "ajouterreactif", component: AjouterComponent},
+    { path: "ajouterreactif", component: AjouterComponent },
     {path:"**",component:PageNotFoundComponent},
 ];
